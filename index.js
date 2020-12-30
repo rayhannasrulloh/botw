@@ -19,8 +19,8 @@ const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
     A187: '🔰_MyBot_🔰',
-    instagram: 'https://instagram.com/nur.fdhl_',
-    nomer: 'wa.me/6283102650464',
+    instagram: 'https://instagram.com/rayhanyuuichirou',
+    nomer: 'wa.me/6282278989976',
     aktif: 'TERGANTUNG OWNER',
     youtube: 'https://youtube.com',
     whatsapp: 'https://chat.whatsapp.com/D8YpSLQWqvh6AYLyn5HnSB',
@@ -163,7 +163,7 @@ client.on('message-new', async (m) => {
            client.sendMessage(id, donate.donate(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break          
       case 'info':
-           client.sendMessage(id, info.info(id, A187, tanggal, waktu, whatsapp, youtube, instagram,aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, info.info(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break             
        case 'nulis':
            nulis(value)
@@ -483,8 +483,8 @@ case 'puisi2':
                })
            break        
            
-           case 'zodiak':
- zodiak(value)
+	case 'zodiak':
+		   zodiak(value)
                .then(data => {
                    const { lahir, ultah, usia, zodiak } = data
                    let hasil = `*Lahir* : _${lahir}_ n\n *Ultah* : _${ultah}_ \n *Usia* : _${usia}_:\n *Zodiak* : _${zodiak}_ `
